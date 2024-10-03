@@ -1,0 +1,286 @@
+/* General Styles */
+body {
+  font-family: 'Google Sans', sans-serif;
+  background-image: linear-gradient(135deg, #ff4081, #e050c3); /* Pink Gradient */
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 70px; /* Ensure space for bottom nav */
+}
+
+.lvl-content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.lvl-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.lvl-btn {
+  background-image: linear-gradient(135deg, #4caf4f, #9efba1); /* Green Gradient */
+  color: #000;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+.lvl-btn:hover {
+  background-color: #ffffff;
+}
+
+/* Topic Cards */
+.topic-card {
+  background-image: linear-gradient(135deg, #FFD700, #FFECB3); /* Yellow Gradient */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.topic-btn {
+  background-color: #333333; /* Black */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.topic-btn:hover {
+  background-color: #000000; /* Dark Black hover effect */
+}
+
+
+/* Styles for Video and Quiz Container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.quiz-container {
+  text-align: center;
+}
+
+#progress-bar {
+  width: 100%;
+  background-color: #ffffff;
+  height: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#progress-fill {
+  width: 0;
+  height: 100%;
+  background-color: #4caf50; /* Green Progress Fill */
+  border-radius: 10px;
+}
+
+#quiz-questions {
+  margin-bottom: 20px;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-image: linear-gradient(135deg, #4caf4f, #9efba1); /* Green Gradient */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  background-color: #45a049;
+}
+
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+  position: fixed; /* Keeps the nav at the bottom of the screen */
+  bottom: 0; /* Aligns the nav at the bottom */
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(135deg, #333333, #000000); /* Black Gradient */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100; /* Ensure it stays on top of other content */
+}
+
+.bottom-nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+.bottom-nav li {
+  flex: 1;
+  text-align: center;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bottom-nav a:hover {
+  color: #FFD700; /* Highlight color when hovering */
+}
+
+
+/*NEWS----------------------------------------------------------------------*/
+.category-container {
+  margin-left: 6.3cm;
+  padding-left: 5cm;
+  padding-right: 5cm;
+  padding-top: 0.5cm;
+  padding-bottom: 0.5cm;
+}
+
+.category-btn {
+  background-image: linear-gradient(135deg, #FFD700, #FFECB3); /* Yellow Gradient */
+  border:rgb(0, 0, 0);
+  
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #FFD166; /* Lemon Yellow on hover */
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.news-item {
+  background-color: white;
+  border: 1px solid #6A1B9A; /* Deep Purple for border */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: scale(1.05);
+}
+
+.news-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 15px;
+}
+
+.news-title {
+  font-size: 1.2em;
+  color: #6A1B9A; /* Deep Purple for title */
+  margin-bottom: 10px;
+}
+
+.news-description {
+  font-size: 1em;
+  color: #2EC4B6; /* Bright Teal for description */
+  line-height: 1.5;
+}
+
+.news-link {
+  display: block;
+  margin-top: 15px;
+  text-align: right;
+  color: #FF6F61; /* Vivid Coral for link */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* Date and Weather Section */
+.date-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-image: linear-gradient(135deg, #FFD700, #FFECB3); /* Yellow Gradient */
+}
+
+.date-weather .date, .date-weather .weather {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.date-weather .weather p {
+  margin: 0;
+}
+
+.date-weather #location {
+  font-size: 14px;
+  color: #555;
+}
+

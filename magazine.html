@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine</title>
+    <link rel="stylesheet" href="/magazine.css">
+    <script src="magazine.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Magazine</h1>
+        <p>Welcome to our professional magazine collection. Click on a cover to read more.</p>
+    </header>
+
+    <main>
+        <div class="magazine-snippets">
+            <!-- Example Snippet 1 -->
+            <div class="magazine-snippet" onclick="openMagazine('magazine1.pdf', 'Magazine Title 1', 'cover1.jpg')">
+                <img src="cover1.jpg" alt="Magazine Title 1 Cover" class="cover-image">
+                <h2>The Economist</h2>
+                
+            </div>
+
+            <!-- Example Snippet 2 -->
+            <div class="magazine-snippet" onclick="openMagazine('magazine2.pdf', 'Magazine Title 2', 'cover2.jpg')">
+                <img src="cover2.jpg" alt="Magazine Title 2 Cover" class="cover-image">
+                <h2>Fortune</h2>
+                
+            </div>
+
+        
+
+            <!-- Add more snippets as needed -->
+        </div>
+
+        <!-- PDF Container -->
+        <div id="pdf-container">
+            <button id="close-pdf" onclick="closePdf()">Close</button>
+            <iframe id="pdf-iframe" src="" frameborder="0"></iframe>
+        </div>
+
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="magazine.html">Magazines</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+

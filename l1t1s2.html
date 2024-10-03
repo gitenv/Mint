@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Topic - Coming Soon</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Google Sans', sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f06, #f79);
+        }
+        .coming-soon-container {
+            text-align: center;
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1.5s ease-in-out;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .countdown {
+            font-size: 2rem;
+            color: #4caf50;
+            margin-bottom: 20px;
+        }
+        .coming-soon-btn {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .coming-soon-btn:hover {
+            background-color: #45a049;
+        }
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon-container">
+        <h1>Coming Soon!</h1>
+        <p>Our next exciting lesson is on the way. Stay tuned for more fun and learning about money!</p>
+        <div class="countdown">New Content in: <strong>5 days</strong></div>
+        <button class="coming-soon-btn" onclick="goHome()">Go Back to Homepage</button>
+    </div>
+
+    <script>
+        function goHome() {
+            window.location.href = 'home.html'; // Redirects to the homepage
+        }
+    </script>
+</body>
+</html>

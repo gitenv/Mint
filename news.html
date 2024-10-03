@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/news.js" defer></script>
+</head>
+<body>
+    <div class="header">
+      
+        <div class="category-container">
+            <button class="category-btn" onclick="fetchNews('stock')">Stock Market</button>
+            <button class="category-btn" onclick="fetchNews('crypto')">Cryptocurrency</button>
+            <button class="category-btn" onclick="fetchNews('economy')">Economy</button>
+            <button class="category-btn" onclick="fetchNews('personal-finance')">Personal Finance</button>
+        </div>
+    </div>
+
+      <!-- Weather and Date Section -->
+    <div class="date-weather">
+        <div class="date">
+        <p id="current-day"></p>
+        <p id="current-date"></p>
+        </div>
+        <div class="weather">
+        <p id="location"></p>
+        <p id="weather-details"></p>
+        </div>
+    </div>
+    
+    <div id="news-container" class="news-container"></div>
+
+    <script src="news.js"></script>
+    <!-- Bottom Navigation Bar -->
+<nav class="bottom-nav">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="magazine.html">Magazines</a></li>
+    </ul>
+  </nav>
+  
+</body>
+</html>

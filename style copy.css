@@ -1,0 +1,536 @@
+/* General Styles */
+body {
+  font-family: 'Google Sans', sans-serif;
+  background: linear-gradient(to bottom right, #FFDEE9, #B5FFFC); /* Youthful gradient */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #ff6f61; /* Youthful bright color */
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Profile Section */
+.profile img {
+  border: 3px solid #ff6f61;
+}
+
+/* Level Buttons */
+.lvl-buttons a {
+  background-color: #34ace0; /* Bright blue */
+  color: white;
+  padding: 16px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.lvl-buttons a:hover {
+  background-color: #227093; /* Darker blue on hover */
+}
+
+/* Topic Cards */
+.topic-card {
+  background-color: #ffeaa7; /* Light yellow card */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.topic-btn {
+  background-color: #6ab04c; /* Bright green for buttons */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.topic-btn:hover {
+  background-color: #218c74; /* Dark green hover effect */
+}
+
+
+/* Styles for Video and Quiz Container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.quiz-container {
+  text-align: center;
+}
+
+#progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#progress-fill {
+  width: 0;
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 10px;
+}
+
+#quiz-questions {
+  margin-bottom: 20px;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  background-color: #45a049;
+}
+
+
+body {
+  font-family: 'Google Sans', sans-serif;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 70px; /* Ensure space for bottom nav */
+}
+
+.lvl-content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.lvl-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.lvl-btn {
+  background-color: #d8f3dc;
+  color: #000;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+.lvl-btn:hover {
+  background-color: #b7e4c7;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+  position: fixed; /* Keeps the nav at the bottom of the screen */
+  bottom: 0; /* Aligns the nav at the bottom */
+  left: 0;
+  width: 100%;
+  background-color: #5B3CF2; /* Use your theme color */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100; /* Ensure it stays on top of other content */
+}
+
+.bottom-nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+.bottom-nav li {
+  flex: 1;
+  text-align: center;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bottom-nav a:hover {
+  color: #FFD700; /* Highlight color when hovering */
+}
+
+
+/*NEWS----------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Google Sans', sans-serif;
+}
+
+body {
+  background-color: #42A5F5; /* Sky Blue for primary background */
+  color: #6A1B9A; /* Deep Purple for main text */
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #FF6F61; /* Vivid Coral for header */
+  color: white;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.category-container {
+  margin-bottom: 20px;
+}
+
+.category-btn {
+  background-color: #2EC4B6; /* Bright Teal for category buttons */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #FFD166; /* Lemon Yellow on hover */
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.news-item {
+  background-color: white;
+  border: 1px solid #6A1B9A; /* Deep Purple for border */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: scale(1.05);
+}
+
+.news-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 15px;
+}
+
+.news-title {
+  font-size: 1.2em;
+  color: #6A1B9A; /* Deep Purple for title */
+  margin-bottom: 10px;
+}
+
+.news-description {
+  font-size: 1em;
+  color: #2EC4B6; /* Bright Teal for description */
+  line-height: 1.5;
+}
+
+.news-link {
+  display: block;
+  margin-top: 15px;
+  text-align: right;
+  color: #FF6F61; /* Vivid Coral for link */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.news-link:hover {
+  text-decoration: underline;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+  position: fixed; /* Keeps the nav at the bottom of the screen */
+  bottom: 0; /* Aligns the nav at the bottom */
+  left: 0;
+  width: 100%;
+  background-color: #5B3CF2; /* Use your theme color */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100; /* Ensure it stays on top of other content */
+}
+
+.bottom-nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+.bottom-nav li {
+  flex: 1;
+  text-align: center;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bottom-nav a:hover {
+  color: #FFD700; /* Highlight color when hovering */
+}
+
+/* Date and Weather Section */
+.date-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #FFD700; /* Adjust based on your theme */
+}
+
+.date-weather .date, .date-weather .weather {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.date-weather .weather p {
+  margin: 0;
+}
+
+.date-weather #location {
+  font-size: 14px;
+  color: #555;
+}
+
+/*MAGAZINE----------------------------------------------------------------------*/
+/* Reset default browser styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: #FFD700; /* Gold color */
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.magazine-snippets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.magazine-snippet {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.magazine-snippet:hover {
+  transform: scale(1.05);
+}
+
+.cover-image {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.pdf-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#pdf-iframe {
+  width: 80%;
+  height: 80vh;
+  border: none;
+}
+
+#close-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #FF4500; /* Orange Red */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+.bottom-nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.bottom-nav li {
+  list-style: none;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Style for the PDF container */
+#pdf-container {
+  position: fixed; /* Ensure it covers the whole screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark background for overlay effect */
+  display: none; /* Initially hidden */
+  justify-content: center; /* Center the PDF */
+  align-items: center; /* Center the PDF */
+  overflow: auto; /* Allow scrolling */
+}
+
+/* Style for the iframe */
+#pdf-iframe {
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Adjust as needed */
+  border: none; /* Remove border for a cleaner look */
+  pointer-events: auto; /* Enable pointer events for the iframe */
+}
+
+/* Style for the close button */
+#close-pdf {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 999; /* Ensure it is above the PDF */
+}

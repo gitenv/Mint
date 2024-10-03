@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Google Sans', sans-serif;
+}
+
+body {
+  background-color: #42A5F5; /* Sky Blue for primary background */
+  color: #6A1B9A; /* Deep Purple for main text */
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #FF6F61; /* Vivid Coral for header */
+  color: white;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.category-container {
+  margin-bottom: 20px;
+}
+
+.category-btn {
+  background-color: #2EC4B6; /* Bright Teal for category buttons */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #FFD166; /* Lemon Yellow on hover */
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.news-item {
+  background-color: white;
+  border: 1px solid #6A1B9A; /* Deep Purple for border */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: scale(1.05);
+}
+
+.news-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 15px;
+}
+
+.news-title {
+  font-size: 1.2em;
+  color: #6A1B9A; /* Deep Purple for title */
+  margin-bottom: 10px;
+}
+
+.news-description {
+  font-size: 1em;
+  color: #2EC4B6; /* Bright Teal for description */
+  line-height: 1.5;
+}
+
+.news-link {
+  display: block;
+  margin-top: 15px;
+  text-align: right;
+  color: #FF6F61; /* Vivid Coral for link */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.news-link:hover {
+  text-decoration: underline;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+  position: fixed; /* Keeps the nav at the bottom of the screen */
+  bottom: 0; /* Aligns the nav at the bottom */
+  left: 0;
+  width: 100%;
+  background-color: #5B3CF2; /* Use your theme color */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100; /* Ensure it stays on top of other content */
+}
+
+.bottom-nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+.bottom-nav li {
+  flex: 1;
+  text-align: center;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bottom-nav a:hover {
+  color: #FFD700; /* Highlight color when hovering */
+}
+
+/* Date and Weather Section */
+.date-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #FFD700; /* Adjust based on your theme */
+}
+
+.date-weather .date, .date-weather .weather {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.date-weather .weather p {
+  margin: 0;
+}
+
+.date-weather #location {
+  font-size: 14px;
+  color: #555;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Money - Video and Quiz</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/quiz.js" defer></script> <!-- Add quiz JS here -->
+</head>
+<body>
+ 
+
+    <div class="container">
+        <h2>Introduction to Money</h2>
+
+        <!-- Embedded YouTube video -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RczKUf3t7ww" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Questionnaire will be loaded after the video -->
+        <div class="quiz-container">
+            <h3>Test Your Knowledge</h3>
+            <div id="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            <div id="quiz-questions"></div>
+            <button id="submit-btn">Submit Quiz</button>
+        </div>
+
+        <!-- Modal Box for the result -->
+        <div id="result-modal" class="modal">
+            <div class="modal-content">
+                <h2>Your Result</h2>
+                <p id="score-result"></p>
+                <button id="retry-btn" class="modal-btn">Rewatch Video</button>
+                <button id="next-btn" class="modal-btn">Next Topic</button>
+            </div>
+        </div>
+    </div>
+    <nav class="bottom-nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="magazines.html">Magazines</a></li>
+        </ul>
+      </nav>
+</body>
+</html>
