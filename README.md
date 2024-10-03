@@ -1,2 +1,2 @@
 # Mint
-The youth financial literacy web app
+The youth financial literacy web-app
