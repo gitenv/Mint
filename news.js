@@ -1,4 +1,4 @@
-const apiKey = 'df4e0ab4923f4ee6b2baff3e7f3bfb7c';
+const apiKey = 'secret';
 const newsContainer = document.getElementById('news-container');
 
 // Fetch finance news from NewsAPI based on category
@@ -25,7 +25,7 @@ async function fetchNews(category) {
 
     try {
         const response = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKey}`);
-        //https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=df4e0ab4923f4ee6b2baff3e7f3bfb7c
+        //https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=secret
         
         const data = await response.json();
         displayNews(data.articles);
